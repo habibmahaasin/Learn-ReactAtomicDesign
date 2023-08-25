@@ -1,9 +1,15 @@
-import InputForm from "../Elements/Input/Index";
-import Button from "../Elements/Button/Index";
+import InputForm from "../Elements/Input/index";
+import Button from "../Elements/Button/index";
 
 const FormRegister = () => {
     return (
       <form className="mt-4" action="">
+        <InputForm
+          label="Name"
+          name="name"
+          type="text"
+          placeholder="Enter your Name"
+        />
         <InputForm
           label="Email"
           name="email"
@@ -16,7 +22,7 @@ const FormRegister = () => {
           type="password"
           placeholder="Enter your Password"
         />
-        <Button>Register</Button>
+        <Button style="w-full bg-blue-500">Register</Button>
       </form>
     );
 }
