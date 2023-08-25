@@ -7,7 +7,7 @@ const PagesLayout = (props) => {
         localStorage.removeItem('email')
         localStorage.removeItem('password')
         window.location.href = '/login'
-    };
+    }; 
     const {children} = props
     return(
         <div>
