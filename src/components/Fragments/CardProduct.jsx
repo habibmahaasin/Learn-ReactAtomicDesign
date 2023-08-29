@@ -29,11 +29,11 @@ const Body = (props) => {
 };
 
 const Footer = (prop) => {
-  const {price} = prop
+  const {price, handleAddToCart, id } = prop
   return (
     <div className="flex justify-between mt-4">
-      <span className="font-semibold text-lg mt-1.5">{price}</span>
-      <Button style="w-1/2 bg-blue-500">Buy</Button>
+      <span className="font-semibold text-lg mt-1.5">${price}</span>
+      <Button style="w-1/2 bg-blue-500" onClick={() => handleAddToCart(id)}>Buy</Button>
     </div>
   );
 };

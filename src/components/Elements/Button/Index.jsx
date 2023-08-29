@@ -4,9 +4,7 @@ const Button = (props) => {
     <button
       className={` ${style} text-white py-2 rounded-md`}
       type={type}
-      onClick={() => {
-        onClick();
-      }}
+      onClick={onClick}
     >
       {children}
     </button>
